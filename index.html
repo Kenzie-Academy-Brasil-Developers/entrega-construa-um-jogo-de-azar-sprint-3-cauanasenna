@@ -1,23 +1,46 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet"> 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rampart+One&display=swap" rel="stylesheet"> 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" >
     <link rel="stylesheet" href="./style.css">
     <title>Pedra papel e tesoura</title>
 </head>
 <body>
-    <div><h1>Pedra papel ou tesoura?</h1></div>
+    <h2>Pedra, papel ou Tesoura?</h2>
     <section id='jogo'>
         <div id='player'>
-            <div><p>Faça sua escolha:</p></div>
-            <img src="" alt="">
+
+            <div id='escolha-player'>
+                <span id='pontos-player'>0</span>
+                <p>Faça sua escolha:</p>
+                <button id='pedra'>Pedra</button>
+                <button id='papel'>Papel</button>
+                <button id='tesoura'>Tesoura</button>
+                
         </div>
         <div id='computador'>
-            <div><p>Seu oponente:</p></div>
+            <div id='escolha-computador'>
+                <span id='pontos-computador'>0</span>
+                <div><p>Seu oponente:</p></div>
+                <div id='resultado-computador'>
+                </div>
+        </div>            
         </div>
     </section>
+        <div id='resultado'>
+            <div id='resultado-centro'><p>Resultado</p></div>
+        </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
