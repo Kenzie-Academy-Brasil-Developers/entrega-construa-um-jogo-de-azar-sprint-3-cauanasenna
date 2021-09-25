@@ -1,0 +1,189 @@
+/*RESET*/
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;*/
+
+
+
+/*ESTILIZAÇÃO*/
+
+body {
+	background-color: #dfdce3;
+}
+
+h2 {
+    display: flex;
+    text-align: center;    
+	font-family: 'Bungee Shade', cursive;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	margin: 20px;
+	color: black;
+}
+section {
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+}
+
+#jogo {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	flex-direction:column;
+}
+
+#player {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+}
+
+#escolha-player {
+	background-color: #FF1C27;
+	width: 300px;
+	height: 150px;
+	border-radius: 5px;
+}
+
+#escolha-player p{
+	font-size: 20px;
+	margin-top: 30px;
+	color: white;
+}
+
+button {
+	background-color: white;
+	border-radius: 10px;
+	font-size: 15px;
+	margin-top: 20px;
+	margin: 5px;
+}
+
+button:hover {
+	transform: scale(1.2); 
+	background-color: #0476D9
+}
+
+#computador {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#escolha-computador {
+	background-color: #FF1C27;
+	width: 300px;
+	height: 150px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+
+}
+
+#escolha-computador p{
+	font-size: 20px;
+	color: white;
+	margin-top: 20px;
+}
+
+
+#resultado {
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+#resultado-centro {
+	background-color: rgb(173, 169, 169);
+	border-radius: 5px;
+	width: 300px;
+	height: 100px;
+
+}
+
+#resultado-centro p {
+	font-size: 20px;
+	margin-top: 30px;
+	color: white;
+	text-align: center;
+	margin-top: 5px;
+
+}
+
+/*PONTUAÇÃO*/
+
+#pontos-player {
+	font-size: 20px;
+	color: white;
+	display:flex;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 270px;
+	top:10px;
+}
+
+#pontos-computador {
+	font-size: 20px;
+	color: white;
+	display:flex;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 270px;
+	top:10px;
+}
+
+@media (min-width: 720px) {
+
+h2 {
+	font-size: 37px;
+	margin: 20px;
+}
+
+#player {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+#escolha-player {
+	margin: 20px;
+}
+
+#escolha-computador {
+	margin: 20px;
+}
+
+#resultado-centro {
+	width: 640px;
+	height: 100px;
+
+}
+
+} /*FIM DO MEDIA QUERY PC*/
