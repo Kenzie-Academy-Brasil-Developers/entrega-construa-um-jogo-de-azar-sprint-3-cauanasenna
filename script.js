@@ -27,7 +27,7 @@ function computadorEscolhaNome() {
 function jogar(escolha) {
     jogadorEscolha = escolha
 
-    // definir critérios do jogo e quem irá ganhar
+// definir critérios do jogo e quem irá ganhar
 
     if (jogadorEscolha === "papel" && computadorEscolha === "papel") {
         ganhador = "empate";
@@ -56,7 +56,7 @@ function jogar(escolha) {
     }
 }
 
-    // aparecer mensagem de quem ganhou
+// aparecer mensagem de quem ganhou
 
 function quemGanhou() {
 
@@ -70,7 +70,6 @@ function quemGanhou() {
 
 }
 
-function main(evt) {
 
-}
+
 
