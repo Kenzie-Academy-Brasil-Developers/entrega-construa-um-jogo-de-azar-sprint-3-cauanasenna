@@ -17,9 +17,16 @@ botoes.forEach((button) => button.addEventListener('click', function (evt) {
     console.log('nome ganhador: ' + ganhador)
     quemGanhou()
     console.log('quem ganhou: ' + quemGanhou())
+    console.log(jogadorPontuacao)
+    console.log(computadorPontuacao)
 
     computadorEscolha = evt.target.id
     ganhador = evt.target.id
+
+
+document.getElementById('pontos-player').innerHTML = jogadorPontuacao
+document.getElementById('pontos-computador').innerHTML = computadorPontuacao
+
     
 }))
 
@@ -79,19 +86,18 @@ function quemGanhou() {
 
     if (ganhador === "jogador") {
         showWinner.innerText = 'Parabéns! Você ganhou'
-        jogadorPontuacao++
+        jogadorPontuacao += 1/2
     } else if (ganhador === "empate") {
         showWinner.innerText ='Empate!'
     } else if (ganhador === "computador") {
         showWinner.innerText = 'Ah que pena, você perdeu :('
-        computadorPontuacao++
+        computadorPontuacao +=1/2
     }
     return showWinner
 }
+
 // somar pontos
 
-document.getElementById('pontos-player').innerHTML = jogadorPontuacao
-document.getElementById('pontos-computador').innerHTML = computadorPontuacao
 
 
 
