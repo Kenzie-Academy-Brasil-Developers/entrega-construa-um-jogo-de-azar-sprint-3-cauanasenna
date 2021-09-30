@@ -9,16 +9,9 @@ const botoes = document.querySelectorAll('button')
 console.log(botoes)
 botoes.forEach((button) => button.addEventListener('click', function (evt) { 
     jogadorEscolha = evt.target.id
-    console.log('jogador escolheu: ' + jogadorEscolha)
-    console.log('jogada do computador: ' + computadorEscolhaNome())
     computadorEscolhaNome()
-    console.log('nome jogada do computador: ' + computadorNome)
     jogar()
-    console.log('nome ganhador: ' + ganhador)
     quemGanhou()
-    console.log('quem ganhou: ' + quemGanhou())
-    console.log(jogadorPontuacao)
-    console.log(computadorPontuacao)
 
     computadorEscolha = evt.target.id
     ganhador = evt.target.id
@@ -86,12 +79,12 @@ function quemGanhou() {
 
     if (ganhador === "jogador") {
         showWinner.innerText = 'Parabéns! Você ganhou'
-        jogadorPontuacao += 1/2
+        jogadorPontuacao += 1
     } else if (ganhador === "empate") {
         showWinner.innerText ='Empate!'
     } else if (ganhador === "computador") {
         showWinner.innerText = 'Ah que pena, você perdeu :('
-        computadorPontuacao +=1/2
+        computadorPontuacao +=1
     }
     return showWinner
 }
