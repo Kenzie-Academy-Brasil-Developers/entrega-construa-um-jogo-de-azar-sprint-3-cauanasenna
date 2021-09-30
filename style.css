@@ -38,6 +38,7 @@ h2 {
 	margin: 20px;
 	color: black;
 }
+
 section {
 	display:flex;
 	flex-direction:column;
@@ -176,7 +177,7 @@ button:hover {
 	top:10px;
 }
 
-@media (min-width: 720px) {
+@media only screen and (min-width: 720px) {
 
 h2 {
 	font-size: 37px;
@@ -212,4 +213,4 @@ h2 {
 	font-size: 20px;
 }
 
-} /*FIM DO MEDIA QUERY PC*/
+} /*FIM DO MEDIA
