@@ -160,10 +160,8 @@ button:hover {
 	color: white;
 	display:flex;
 	margin: 0;
-	padding: 0;
-	position: relative;
-	left: 270px;
-	top:10px;
+	padding: 10px;
+	justify-content: flex-end;
 }
 
 #pontos-computador {
@@ -171,10 +169,8 @@ button:hover {
 	color: white;
 	display:flex;
 	margin: 0;
-	padding: 0;
-	position: relative;
-	left: 270px;
-	top:10px;
+	padding: 10px;
+	justify-content:flex-end;
 }
 
 @media (min-width: 720px) {
